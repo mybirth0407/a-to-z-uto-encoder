@@ -15,7 +15,10 @@ class MLP(nn.Module):
 
         self.output_size = output_size
 
-        self. = nn.Linear(self.input_size, self.hidden_size)
+        self.fc1 = nn.Linear(self.input_size, self.hidden_size)
+        self.fc2 = nn.Linear(self.input_size, self.hidden_size)
+        self.fc3 = nn.Linear(self.input_size, self.hidden_size)
+
     def forward(self, x):
 
         return x
